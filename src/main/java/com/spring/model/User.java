@@ -72,14 +72,14 @@ public class User {
         this.createDate = createDate;
     }
 
-    public String getLink1()
+    public String getEdit()
     {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("<a href=\"/edit/" + this.getId() + "\">Edit</a>");
        return  new String(stringBuilder);
     }
 
-    public String getLink2()
+    public String getDelete()
     {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("<a href=\"/remove/" + this.getId() + "\">Delete</a>");

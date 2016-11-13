@@ -4,6 +4,8 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib prefix="from" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="ftm" uri="http://java.sun.com/jstl/fmt" %>
+
+<!DOCTYPE html>
 <html>
 <head>
     <title>Search result</title>
@@ -37,9 +39,13 @@
       </tr>
     </c:forEach>
   </table>
+      <br>
+      <h3> <a href="<c:url value="/users"/>">Back</a></h3>
   </c:when>
   <c:when test="${empty foundedUsers}">
-    <h3>There is nothing to show</h3>
+    <h3>There is nothing to show.</h3>
+      <h3> <a href="<c:url value="/users"/>">Back</a></h3>
+
   </c:when>
 </c:choose>
 

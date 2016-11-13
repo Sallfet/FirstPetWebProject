@@ -43,7 +43,6 @@ table {
 /*This is not important*/
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background: url(background.jpg);
     margin:0 auto;
     width:520px;
 }
@@ -63,6 +62,10 @@ a:hover {
     text-decoration:underline;
 }
 
+
+#res{
+
+}
 
 /*
 Table Style - This is what you want
